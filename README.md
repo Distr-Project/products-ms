@@ -1,15 +1,13 @@
 # Product Microservice
 
-
-
 ## Dev
 
-1. Clonar el repositorio
-2. Instalar dependencias
-3. Crear un archivo `.env` basado en el `env.template`
-4. Ejecutar migración de prisma `npx prisma migrate dev`
-5. Levantar el servidor de NATS
+1. Clone the repository
+2. Install dependencies
+3. Create a `.env` file based on `env.template`
+4. Run prisma immigration `npx prisma migrants dev`
+5. Start the NATS server
 ```
 docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
 ```
-6. Ejecutar `npm run start:dev`
+6. Run `npm run start:dev`
